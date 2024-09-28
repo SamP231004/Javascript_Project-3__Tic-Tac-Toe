@@ -1,0 +1,111 @@
+/* ************************************************************************ */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a192f;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+/* ************************************************************************ */
+
+.container {
+    width: 400px;
+    background-color: #0a192f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #64ffda;
+    padding: 20px;
+    color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ************************************************************************ */
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Kode Mono';
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* ************************************************************************ */
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+.cell {
+    width: 100px;
+    height: 90px;
+    background-color: #0a192f;
+    color: #fff;
+    border: 2px solid #64ffda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.cell.x {
+    color: #50fa7b;
+}
+.cell.o {
+    color: #ff79c6;
+}
+.cell:hover {
+    background-color: rgba(100, 255, 218, 0.2);
+}
+
+/* ************************************************************************ */
+
+button {
+    width: 160px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 2px solid #212121;
+    border-radius: 8px;
+    color: #212121;
+    font-size: 18px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    font-family: 'Kode Mono';
+}
+button:hover {
+    box-shadow: 0 0 20px 0 #64ffda;
+}
+
+/* ************************************************************************ */
+
+#results {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-top: 15px;
+}
+#weight-guide {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+#weight-guide h3 {
+    text-decoration: underline;
+}
+#weight-guide p {
+    margin: 5px 0;
+}
+.data-winning-message {
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+
+/* ************************************************************************ */
